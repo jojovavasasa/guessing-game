@@ -7,7 +7,12 @@ random_number = random.randint (1, 1000)
 
 while True:
     tries = tries + 1
-    guess = int(input("Guess the number between 1 and 1000 "))
+    try:
+        guess = int(input("Guess the number between 1 and 1000 "))
+    except ValueError:
+        print("Invalid number. Please use only numbers")
+        continue  # Ga naar het begin van de lus als er een fout is
+
   
     if guess < random_number:
         print("Too low, try again ")
