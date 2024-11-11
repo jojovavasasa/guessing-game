@@ -11,7 +11,7 @@ while True:
         guess = int(input("Guess the number between 1 and 1000 "))
     except ValueError:
         print("Invalid number. Please use only numbers")
-        continue  # Ga naar het begin van de lus als er een fout is
+        continue
 
   
     if guess < random_number:
