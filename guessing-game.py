@@ -1,4 +1,5 @@
 import random
+import time
 
 tries = 0
 
@@ -15,3 +16,4 @@ while True:
     if guess == random_number:
         print(f"Good job, the number was {random_number} and you guessed in {tries} tries, restart program to try again")
         break
+time.sleep(5)
